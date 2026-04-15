@@ -1,0 +1,33 @@
+📸 SCREENSHOT GUIDE FOR YOUR ASSIGNMENT
+-----------------------------------------
+
+1. SCREENSHOT: Sorting Algorithm Implementations (Insertion, Shell, Quick)
+   - WHAT IT DOES: These are the core logic of your assignment.
+   - EXPLANATION: Use this to show that you correctly implemented the logic from your classroom teachings. Point out things like the 'pivot' in Quick Sort or the 'gap' in Shell Sort.
+
+2. SCREENSHOT: Searching Algorithm Implementations (Sequential, Binary)
+   - WHAT IT DOES: Shows how you find data in an array.
+   - EXPLANATION: Mention that Binary Search requires a sorted array (which we generated) to achieve its O(log n) efficiency.
+
+3. SCREENSHOT: Timing Function (measureTime method)
+   - WHAT IT DOES: This is your experimental tool.
+   - EXPLANATION: Explain that it uses 'System.nanoTime()' for maximum precision to capture the micro-seconds and nano-seconds that the algorithms take to run.
+
+4. SCREENSHOT: Terminal Output Table (Random Data)
+   - WHAT IT DOES: Shows your actual empirical results.
+   - EXPLANATION: This is the "Data Collection" part of your assignment. Use this to compare the speeds. For example: "Quick Sort is faster as size N increases."
+
+5. SCREENSHOT: Terminal Output Table (Sorted Data)
+   - WHAT IT DOES: Shows best/worst case scenarios.
+   - EXPLANATION: Explain why Insertion Sort is suddenly 'faster' than Quick Sort here. This shows you understand how data order affects performance.
+
+6. SCREENSHOT: The CSV file (results.csv)
+   - WHAT IT DOES: Shows how you organized your data for graphing.
+   - EXPLANATION: This fulfills the requirement for "Tables of results" and "experimental design." It shows you prepared data for tools like Excel.
+
+7. SCREENSHOT: Project File Structure (DSA_Assignment folder)
+   - WHAT IT DOES: Shows you organized the project professionally in a single Main.java file as requested.
+
+-----------------------------------------
+💡 TIP FOR YOUR REPORT:
+When you write your analysis, use these screenshots as "Figure 1", "Figure 2", etc., and refer to them when explaining the performance differences.
