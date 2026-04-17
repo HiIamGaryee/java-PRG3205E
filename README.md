@@ -3,9 +3,7 @@ Located in the `DSA_Assignment/` directory.
 
 ### Structure
 - `Main.java`: Experimental runner for performance analysis.
-- `Sorting.java`: Implementation of Insertion, Shell, and Quick Sort.
-- `Searching.java`: Implementation of Sequential and Binary Search.
-- `Utils.java`: Data generation and utility functions.
+s.
 
 ### How to Run
 From the root directory:
