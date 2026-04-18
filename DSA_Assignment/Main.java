@@ -14,7 +14,7 @@ public class Main {
 
         try (FileWriter csvWriter = new FileWriter("DSA_Assignment/results.csv")) {
             csvWriter.append("Type,Size,Algorithm,AvgTime\n");
-
+            runSortingValidationTests();
             runSortingExperiment(csvWriter, "Random", new int[] { 1000, 4000, 6000 });
 
             runSortingExperiment(csvWriter, "Sorted", new int[] { 1000, 4000, 6000 });
@@ -84,6 +84,37 @@ public class Main {
                 writer.append("Search," + size + ",Binary," + avgBin + "\n");
             }
         }
+    }
+
+    private static void runSortingValidationTests() {
+        int[] testSizes = { 0, 1, 4, 5 };
+
+        for (int size : testSizes) {
+            int[] originalArray = generateRandom(size);
+
+            int[] insertionArray = originalArray.clone();
+            int[] shellArray = originalArray.clone();
+            int[] quickArray = originalArray.clone();
+
+            insertionSort(insertionArray);
+            shellSort(shellArray);
+            quickSort(quickArray);
+
+            System.out.println("Size " + size + " original: " + Arrays.toString(originalArray));
+            System.out.println("Insertion Sort passed: " + isSorted(insertionArray));
+            System.out.println("Shell Sort passed: " + isSorted(shellArray));
+            System.out.println("Quick Sort passed: " + isSorted(quickArray));
+            System.out.println("--------------------------------");
+        }
+    }
+
+    private static boolean isSorted(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            if (array[i - 1] > array[i]) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static long measureTime(Runnable task) {
